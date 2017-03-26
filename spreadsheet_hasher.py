@@ -13,7 +13,7 @@ class SpreadsheetHasher:
     '''Simple class that allows to quickly cut off some parts of spreadsheet, and hash
     vulnerable data one would like to anonymize. Works with basic file formats: csv, xlsx, encoded with utf-8.
     Hashing can be done with multiple, standard algorithms like: md5, sha1, sha224, sha256,
-    sha384, and sha512'''
+    sha384, and sha512. Uses (and requires) popular modules: pandas and hashlib.'''
 
     def __init__(self):
         self._df = None
